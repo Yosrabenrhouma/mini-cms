@@ -2,11 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/welcome', function () {
+Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/bonjour', function () {
+Route::get('/git add -A
+git commit -m "Deplacer les pages vers PageController"', function () {
     return 'Bonjour MDW3 ! Voici ma première route Laravel 13.';
 });
 
