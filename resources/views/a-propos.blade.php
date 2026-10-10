@@ -7,6 +7,11 @@
 </head>
 <body>
     <h1>TEST PAGE A PROPOS</h1>
-    <p>Si tu vois ce texte, la page fonctionne !</p>
+        <p>
+           
+        <a href="{{ route('home') }}">Accueil</a> |
+        <a href="/heure">Heure</a>
+    
+    </p>
 </body>
 </html>
