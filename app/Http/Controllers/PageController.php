@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Controllers\PostController;
 class PageController extends Controller
 {
     public function home()
@@ -15,5 +15,6 @@ class PageController extends Controller
             'auteur' => 'Prenom Nom',
             'groupe' => 'MDW32',
         ]);
-    }
+    } 
+    
 }

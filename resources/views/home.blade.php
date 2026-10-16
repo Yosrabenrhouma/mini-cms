@@ -1,9 +1,22 @@
-<x-layout>
-    <x-slot:title>Accueil - Mini-CMS</x-slot:title>
 
-    <h1 class="text-3xl font-bold">Bienvenue sur Mini-CMS</h1>
-    <p class="mt-4 text-gray-700">Mini-CMS est le projet fil rouge de l'Atelier Framework Côté Serveur (Laravel 13).</p>
-    <p class="mt-6">
-        <a href="{{ route('about') }}" class="text-red-600 underline">En savoir plus sur le projet</a>
-    </p>
-</x-layout>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Mini CMS</title>
+</head>
+<body>
+    <h1>Bienvenue dans mon Mini CMS</h1>
+
+    <p>Bonjour MDW32 !</p>
+    <p>Bienvenue sur la page d'accueil de mon projet Laravel.</p>
+
+    <nav>
+        <a href="/">Accueil</a> |
+        <a href="/a-propos">À propos</a> |
+        <a href="/heure">Heure</a> |
+        <a href="/posts">Articles</a>
+    </nav>
+</body>
+</html>
