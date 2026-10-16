@@ -1,31 +1,21 @@
+<x-layout>
+    <x-slot:title>À propos - Mini-CMS</x-slot:title>
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À propos - Mini CMS</title>
-</head>
-<body>
-    <h1>À propos de mon projet</h1>
+    <h1 class="text-3xl font-bold mb-6">À propos</h1>
 
-    <p>Ce projet est un Mini CMS réalisé avec Laravel.</p>
-    <p>Auteur : {{ $auteur }}</p>
-    <p>Groupe : {{ $groupe }}</p>
+    <div class="space-y-4 max-w-2xl">
+        <p class="text-gray-700 leading-relaxed">
+            Mini-CMS est le projet fil rouge de l'Atelier Framework Côté Serveur, 3e année MDW, ISET Sidi Bouzid.
+        </p>
 
-    <nav>
-        <a href="/">Accueil</a> |
-        <a href="/a-propos">À propos</a> |
-        <a href="/heure">Heure</a> |
-        <a href="/posts">Articles</a>
-    </nav>
-</body>
+        <p class="text-gray-700">Auteur : {{ $auteur }} - Groupe : {{ $groupe }}</p>
 
-@extends('layouts.app')
+        <x-alert type="info" title="Projet pédagogique">
+            Ce site évolue à chaque session : les pages que vous voyez aujourd'hui seront reliées à une base de données dans la suite du cours.
+        </x-alert>
 
-@section('title', 'À propos - Mini-CMS')
-
-@section('content')
-    <h1>À propos de Mini-CMS</h1>
-@endsection
-</html>
+        <x-alert type="warning" title="Données provisoires">
+            Les articles affichés viennent d'un tableau PHP écrit dans le contrôleur. Ils ne sont pas enregistrés.
+        </x-alert>
+    </div>
+</x-layout>
