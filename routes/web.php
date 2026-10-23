@@ -1,12 +1,21 @@
 <?php
-
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [PageController::class, 'home'])->name('home');
-Route::get('/a-propos', [PageController::class, 'about'])->name('about');
-Route::get('/heure', [PageController::class, 'time'])->name('time');
+Route::get('/', [PageController::class, 'home'])
+    ->name('home');
+
+Route::get('/a-propos', [PageController::class, 'about'])
+    ->name('about');
+
+Route::get('/heure', [PageController::class, 'time'])
+    ->name('time');
+
+// Route temporaire pour tester Laravel
+Route::get('/test', function () {
+    return 'Laravel fonctionne correctement !';
+});
 
 Route::get('/posts/archive/{year}', [PostController::class, 'archive'])
     ->whereNumber('year')
